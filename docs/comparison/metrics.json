@@ -1,0 +1,268 @@
+{
+ "source": "examples/music/glass-garden.msai",
+ "sampleRate": 44100,
+ "excerpts": {
+  "strings-piano": {
+   "title": "Bars 9-14: solo violin, piano, cellos and bass",
+   "from": 26.67,
+   "to": 46.67,
+   "notes": 97,
+   "rows": [
+    {
+     "id": "engine",
+     "label": "Music studio engine",
+     "seconds": 21.5,
+     "centroidHz": 829,
+     "rolloff85Hz": 1324,
+     "flatness": 0.01,
+     "crestDb": 18.4,
+     "lra": 2.4,
+     "stereoWidthPercent": 26,
+     "bands": [
+      {
+       "name": "sub",
+       "db": -18.7
+      },
+      {
+       "name": "bass",
+       "db": -8.6
+      },
+      {
+       "name": "low-mid",
+       "db": -5.5
+      },
+      {
+       "name": "mid",
+       "db": -2.8
+      },
+      {
+       "name": "high-mid",
+       "db": -11.7
+      },
+      {
+       "name": "presence",
+       "db": -18.3
+      },
+      {
+       "name": "air",
+       "db": -30.2
+      }
+     ]
+    },
+    {
+     "id": "ffmpeg-sine",
+     "label": "FFmpeg: sine tones",
+     "seconds": 20.1,
+     "centroidHz": 353,
+     "rolloff85Hz": 657,
+     "flatness": 0,
+     "crestDb": 12.2,
+     "lra": 4.1,
+     "stereoWidthPercent": 0,
+     "bands": [
+      {
+       "name": "sub",
+       "db": -10
+      },
+      {
+       "name": "bass",
+       "db": -5.5
+      },
+      {
+       "name": "low-mid",
+       "db": -3.4
+      },
+      {
+       "name": "mid",
+       "db": -6.2
+      },
+      {
+       "name": "high-mid",
+       "db": -86.4
+      },
+      {
+       "name": "presence",
+       "db": -86.3
+      },
+      {
+       "name": "air",
+       "db": -83.4
+      }
+     ]
+    },
+    {
+     "id": "ffmpeg-additive",
+     "label": "FFmpeg: 5-harmonic tones with decay",
+     "seconds": 20.1,
+     "centroidHz": 609,
+     "rolloff85Hz": 1023,
+     "flatness": 0,
+     "crestDb": 17.5,
+     "lra": 3.8,
+     "stereoWidthPercent": 0,
+     "bands": [
+      {
+       "name": "sub",
+       "db": -15.6
+      },
+      {
+       "name": "bass",
+       "db": -7.4
+      },
+      {
+       "name": "low-mid",
+       "db": -4.2
+      },
+      {
+       "name": "mid",
+       "db": -3.7
+      },
+      {
+       "name": "high-mid",
+       "db": -15
+      },
+      {
+       "name": "presence",
+       "db": -25.6
+      },
+      {
+       "name": "air",
+       "db": -98.1
+      }
+     ]
+    }
+   ]
+  },
+  "full-with-drums": {
+   "title": "Bars 17-20: the climax with drums, harp and strings",
+   "from": 53.34,
+   "to": 66.67,
+   "notes": 257,
+   "rows": [
+    {
+     "id": "engine",
+     "label": "Music studio engine",
+     "seconds": 14.8,
+     "centroidHz": 906,
+     "rolloff85Hz": 1389,
+     "flatness": 0.026,
+     "crestDb": 19.8,
+     "lra": 0.7,
+     "stereoWidthPercent": 27,
+     "bands": [
+      {
+       "name": "sub",
+       "db": -14.5
+      },
+      {
+       "name": "bass",
+       "db": -10.1
+      },
+      {
+       "name": "low-mid",
+       "db": -4.8
+      },
+      {
+       "name": "mid",
+       "db": -2.8
+      },
+      {
+       "name": "high-mid",
+       "db": -12.5
+      },
+      {
+       "name": "presence",
+       "db": -18.3
+      },
+      {
+       "name": "air",
+       "db": -24.2
+      }
+     ]
+    },
+    {
+     "id": "ffmpeg-sine",
+     "label": "FFmpeg: sine tones",
+     "seconds": 14.2,
+     "centroidHz": 3570,
+     "rolloff85Hz": 11445,
+     "flatness": 0.253,
+     "crestDb": 21.4,
+     "lra": 5.4,
+     "stereoWidthPercent": 0,
+     "bands": [
+      {
+       "name": "sub",
+       "db": -6.4
+      },
+      {
+       "name": "bass",
+       "db": -6.6
+      },
+      {
+       "name": "low-mid",
+       "db": -5.9
+      },
+      {
+       "name": "mid",
+       "db": -10.1
+      },
+      {
+       "name": "high-mid",
+       "db": -16.4
+      },
+      {
+       "name": "presence",
+       "db": -12.8
+      },
+      {
+       "name": "air",
+       "db": -9.5
+      }
+     ]
+    },
+    {
+     "id": "ffmpeg-additive",
+     "label": "FFmpeg: 5-harmonic tones with decay",
+     "seconds": 14.2,
+     "centroidHz": 1102,
+     "rolloff85Hz": 1314,
+     "flatness": 0.051,
+     "crestDb": 18.1,
+     "lra": 2.5,
+     "stereoWidthPercent": 0,
+     "bands": [
+      {
+       "name": "sub",
+       "db": -12.1
+      },
+      {
+       "name": "bass",
+       "db": -7.8
+      },
+      {
+       "name": "low-mid",
+       "db": -4
+      },
+      {
+       "name": "mid",
+       "db": -4.4
+      },
+      {
+       "name": "high-mid",
+       "db": -13.3
+      },
+      {
+       "name": "presence",
+       "db": -18.6
+      },
+      {
+       "name": "air",
+       "db": -18.4
+      }
+     ]
+    }
+   ]
+  }
+ }
+}

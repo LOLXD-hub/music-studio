@@ -1,0 +1,42 @@
+{
+ "name": "sfx-reel",
+ "duration": "88.01 s",
+ "loudness": {
+  "integratedLufs": -16,
+  "shortTermMaxLufs": -8.1,
+  "lra": 15.1,
+  "samplePeakDb": -2.4,
+  "truePeakDb": -2.4,
+  "rmsDb": -21.6,
+  "crestDb": 19.2
+ },
+ "spectrum": {
+  "centroidHz": 1463,
+  "rolloff85Hz": 2466,
+  "tiltDbPerOct": -5.1,
+  "bands": [
+   "sub 20-60 Hz: 10.2%",
+   "bass 60-250 Hz: 29.1%",
+   "low-mid 250-500 Hz: 6.8%",
+   "mid 500-2000 Hz: 42.1%",
+   "high-mid 2000-4000 Hz: 13%",
+   "presence 4000-8000 Hz: 3.5%",
+   "air 8000-16000 Hz: 2%"
+  ]
+ },
+ "stereo": {
+  "correlation": 0.87,
+  "widthPercent": 25,
+  "balanceDb": 0
+ },
+ "issues": [],
+ "critic": {
+  "score": null,
+  "findings": [],
+  "strengths": []
+ },
+ "mix": {
+  "findings": [],
+  "tracks": []
+ }
+}

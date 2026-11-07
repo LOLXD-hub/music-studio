@@ -1,0 +1,191 @@
+{
+ "name": "glass-garden",
+ "duration": "112.18 s",
+ "loudness": {
+  "integratedLufs": -16.3,
+  "shortTermMaxLufs": -12.5,
+  "lra": 11.4,
+  "samplePeakDb": -1,
+  "truePeakDb": -0.9,
+  "rmsDb": -19.5,
+  "crestDb": 18.5
+ },
+ "spectrum": {
+  "centroidHz": 792,
+  "rolloff85Hz": 1303,
+  "tiltDbPerOct": -7.3,
+  "bands": [
+   "sub 20-60 Hz: 2.2%",
+   "bass 60-250 Hz: 20.8%",
+   "low-mid 250-500 Hz: 31%",
+   "mid 500-2000 Hz: 44.3%",
+   "high-mid 2000-4000 Hz: 5.3%",
+   "presence 4000-8000 Hz: 1.5%",
+   "air 8000-16000 Hz: 0.2%"
+  ]
+ },
+ "stereo": {
+  "correlation": 0.84,
+  "widthPercent": 28,
+  "balanceDb": 0.4
+ },
+ "issues": [],
+ "critic": {
+  "score": {
+   "harmony": 93,
+   "melody": 93,
+   "rhythm": 100,
+   "dynamics": 100,
+   "structure": 100,
+   "humanization": 100,
+   "orchestration": 100,
+   "overall": 98
+  },
+  "findings": [
+   {
+    "severity": "warn",
+    "category": "harmony",
+    "track": "Flute",
+    "problem": "15% of the longer melody notes are outside the key.",
+    "fix": "Check for wrong accidentals, or declare the intended modal colour in the key."
+   },
+   {
+    "severity": "info",
+    "category": "melody",
+    "track": "Violin",
+    "problem": "Phrases do not come to rest: the last note of most 4-bar groups is short or not a chord tone.",
+    "fix": "End phrases on a held chord tone (at least one beat) so the listener feels a breath."
+   },
+   {
+    "severity": "info",
+    "category": "melody",
+    "track": "Flute",
+    "problem": "Few stepwise moves; the melody mostly jumps.",
+    "fix": "Add passing tones between chord tones."
+   },
+   {
+    "severity": "info",
+    "category": "melody",
+    "track": "Flute",
+    "problem": "The melody never rests.",
+    "fix": "Leave a beat or two of silence at the end of each phrase."
+   }
+  ],
+  "strengths": [
+   "The arrangement has a clear energy arc between sections.",
+   "The piece resolves to the tonic.",
+   "The drum part varies from bar to bar and has fills.",
+   "Harmonic variety: 14 different chord functions."
+  ]
+ },
+ "mix": {
+  "findings": [
+   {
+    "severity": "info",
+    "message": "3 accompaniment tracks sit mostly in 250 Hz-2.5 kHz (Felt piano, Violins, Hall): crowded midrange.",
+    "hint": "Pan them apart, thin the voicings, EQ-carve each a different region."
+   }
+  ],
+  "tracks": [
+   {
+    "track": "Felt piano",
+    "role": "chords",
+    "rmsDb": -31,
+    "peakDb": -6.1,
+    "low": "33%",
+    "mid": "61%",
+    "high": "6%"
+   },
+   {
+    "track": "Harp",
+    "role": "arp",
+    "rmsDb": -34.8,
+    "peakDb": -13.9,
+    "low": "19%",
+    "mid": "60%",
+    "high": "21%"
+   },
+   {
+    "track": "Cellos",
+    "role": "chords",
+    "rmsDb": -37.6,
+    "peakDb": -18.6,
+    "low": "43%",
+    "mid": "53%",
+    "high": "4%"
+   },
+   {
+    "track": "Solo cello",
+    "role": "melody",
+    "rmsDb": -34.7,
+    "peakDb": -23.3,
+    "low": "46%",
+    "mid": "52%",
+    "high": "3%"
+   },
+   {
+    "track": "Violin",
+    "role": "melody",
+    "rmsDb": -32.7,
+    "peakDb": -19.2,
+    "low": "14%",
+    "mid": "71%",
+    "high": "15%"
+   },
+   {
+    "track": "Violins",
+    "role": "chords",
+    "rmsDb": -38.1,
+    "peakDb": -19.8,
+    "low": "5%",
+    "mid": "67%",
+    "high": "28%"
+   },
+   {
+    "track": "Flute",
+    "role": "melody",
+    "rmsDb": -37.3,
+    "peakDb": -28.1,
+    "low": "8%",
+    "mid": "80%",
+    "high": "12%"
+   },
+   {
+    "track": "Horn",
+    "role": "chords",
+    "rmsDb": -36.2,
+    "peakDb": -21.8,
+    "low": "40%",
+    "mid": "57%",
+    "high": "3%"
+   },
+   {
+    "track": "Double bass",
+    "role": "bass",
+    "rmsDb": -40.2,
+    "peakDb": -22.5,
+    "low": "84%",
+    "mid": "16%",
+    "high": "0%"
+   },
+   {
+    "track": "Drums",
+    "role": "drums",
+    "rmsDb": -31.7,
+    "peakDb": -6.3,
+    "low": "49%",
+    "mid": "42%",
+    "high": "10%"
+   },
+   {
+    "track": "Hall",
+    "role": "chords",
+    "rmsDb": -44.9,
+    "peakDb": -25.2,
+    "low": "30%",
+    "mid": "61%",
+    "high": "9%"
+   }
+  ]
+ }
+}

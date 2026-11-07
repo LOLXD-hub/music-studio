@@ -1,0 +1,182 @@
+{
+ "name": "static-bloom",
+ "duration": "127.79 s",
+ "loudness": {
+  "integratedLufs": -13.4,
+  "shortTermMaxLufs": -11.3,
+  "lra": 6.5,
+  "samplePeakDb": -1,
+  "truePeakDb": -0.6,
+  "rmsDb": -15.9,
+  "crestDb": 14.9
+ },
+ "spectrum": {
+  "centroidHz": 600,
+  "rolloff85Hz": 883,
+  "tiltDbPerOct": -4.3,
+  "bands": [
+   "sub 20-60 Hz: 17.7%",
+   "bass 60-250 Hz: 56.6%",
+   "low-mid 250-500 Hz: 13.4%",
+   "mid 500-2000 Hz: 23.8%",
+   "high-mid 2000-4000 Hz: 1.7%",
+   "presence 4000-8000 Hz: 1.2%",
+   "air 8000-16000 Hz: 1.3%"
+  ]
+ },
+ "stereo": {
+  "correlation": 0.87,
+  "widthPercent": 25,
+  "balanceDb": -0.3
+ },
+ "issues": [
+  {
+   "severity": "warn",
+   "message": "A lot of sub energy (15.4% below 60 Hz): small speakers will not reproduce it and it eats headroom."
+  }
+ ],
+ "critic": {
+  "score": {
+   "harmony": 98,
+   "melody": 98,
+   "rhythm": 100,
+   "dynamics": 100,
+   "structure": 100,
+   "humanization": 100,
+   "orchestration": 100,
+   "overall": 99
+  },
+  "findings": [
+   {
+    "severity": "info",
+    "category": "melody",
+    "track": "Lead",
+    "problem": "Phrases do not come to rest: the last note of most 4-bar groups is short or not a chord tone.",
+    "fix": "End phrases on a held chord tone (at least one beat) so the listener feels a breath."
+   },
+   {
+    "severity": "info",
+    "category": "harmony",
+    "track": "Pad",
+    "bars": [
+     1,
+     1
+    ],
+    "problem": "3 parallel fifths or octaves between the outer voices.",
+    "fix": "Re-voice with theory voicing (action 'voice_lead'), which keeps common tones and avoids parallels."
+   }
+  ],
+  "strengths": [
+   "Lead: strong beats land on chord tones (100%).",
+   "The arrangement has a clear energy arc between sections.",
+   "The piece resolves to the tonic.",
+   "The drum part varies from bar to bar and has fills.",
+   "Harmonic variety: 11 different chord functions."
+  ]
+ },
+ "mix": {
+  "findings": [
+   {
+    "severity": "warn",
+    "message": "A lot of sub energy (17.7% below 60 Hz): small speakers will not reproduce it and it eats headroom."
+   },
+   {
+    "severity": "info",
+    "message": "5 accompaniment tracks sit mostly in 250 Hz-2.5 kHz (Chords, Arp, Pluck, Space, Echo): crowded midrange.",
+    "hint": "Pan them apart, thin the voicings, EQ-carve each a different region."
+   }
+  ],
+  "tracks": [
+   {
+    "track": "Kick+Drums",
+    "role": "drums",
+    "rmsDb": -26.1,
+    "peakDb": -2.5,
+    "low": "85%",
+    "mid": "12%",
+    "high": "3%"
+   },
+   {
+    "track": "Bass",
+    "role": "bass",
+    "rmsDb": -39.7,
+    "peakDb": -19.1,
+    "low": "56%",
+    "mid": "43%",
+    "high": "1%"
+   },
+   {
+    "track": "Sub",
+    "role": "bass",
+    "rmsDb": -51,
+    "peakDb": -40,
+    "low": "96%",
+    "mid": "4%",
+    "high": "0%"
+   },
+   {
+    "track": "Pad",
+    "role": "pad",
+    "rmsDb": -40.8,
+    "peakDb": -21.3,
+    "low": "40%",
+    "mid": "57%",
+    "high": "3%"
+   },
+   {
+    "track": "Chords",
+    "role": "chords",
+    "rmsDb": -45.1,
+    "peakDb": -25.2,
+    "low": "26%",
+    "mid": "68%",
+    "high": "6%"
+   },
+   {
+    "track": "Arp",
+    "role": "arp",
+    "rmsDb": -35.5,
+    "peakDb": -21.5,
+    "low": "10%",
+    "mid": "78%",
+    "high": "12%"
+   },
+   {
+    "track": "Lead",
+    "role": "melody",
+    "rmsDb": -33.5,
+    "peakDb": -15.6,
+    "low": "22%",
+    "mid": "68%",
+    "high": "10%"
+   },
+   {
+    "track": "Pluck",
+    "role": "arp",
+    "rmsDb": -40.2,
+    "peakDb": -21.7,
+    "low": "33%",
+    "mid": "62%",
+    "high": "5%"
+   },
+   {
+    "track": "Space",
+    "role": "chords",
+    "rmsDb": -48.4,
+    "peakDb": -29.5,
+    "low": "27%",
+    "mid": "64%",
+    "high": "8%"
+   },
+   {
+    "track": "Echo",
+    "role": "chords",
+    "rmsDb": -46.6,
+    "peakDb": -28.7,
+    "low": "16%",
+    "mid": "74%",
+    "high": "11%"
+   }
+  ]
+ }
+}

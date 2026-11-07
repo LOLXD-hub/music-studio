@@ -1,0 +1,40 @@
+   0.0  Alarms & Signals/Beeps / Beep - short, high 03
+   0.6  Alarms & Signals/Bells / Doorbell - low, short 03
+   2.6  Alarms & Signals/Phone / Phone Key 3
+   3.1  Cartoon/Creatures / Squeak - low, long 03
+   3.7  Cartoon/Impacts / Bonk - long 03
+   4.4  Cartoon/Springs / Boing - low, fast 03
+   5.5  Drums & Percussion/Hats / Closed Hat - short, acoustic 03
+   5.9  Drums & Percussion/Percussion / Tambourine - soft, lo-fi 03
+   6.5  Drums & Percussion/Snares / Snare - low 03
+   7.0  Explosions/Blasts / Explosion - short, crisp 03
+   9.1  Explosions/Debris / Debris Rumble - short 03
+  11.4  Explosions/Distant / Distant Blast - short, far 03
+  15.8  Foley/Body / Heartbeat - fast 03
+  18.2  Foley/Cloth & Paper / Cloth Rustle 03
+  19.3  Foley/Footsteps / Footstep - quick, heavy 03
+  20.0  Game & Retro/Impacts / Retro Hit - crushed 03
+  20.6  Game & Retro/Jingles / Level Up - slow, high 03
+  22.4  Game & Retro/Pickups / Coin - close, high 03
+  23.1  Horror/Drones / Horror Drone - low 03
+  27.4  Horror/Stingers / Horror Stinger - harsh 03
+  30.1  Horror/Textures / Metal Scrape - low, rough 03
+  32.6  Impacts/Booms / Sub Boom - deep, soft 03
+  35.4  Impacts/Cinematic / Cinematic Hit - short 03
+  39.7  Impacts/Metal / Metal Hit - dull, long 03
+  41.9  Magic & Fantasy/Chimes / Magic Chime - low, small 03
+  44.5  Magic & Fantasy/Sparkles / Sparkle 03
+  46.7  Magic & Fantasy/Spells / Spell Cast - high, shimmering 03
+  50.1  Mechanical/Alarms / Siren - short, fast 03
+  54.3  Mechanical/Hum / Fan Hum 03
+  58.7  Mechanical/Pneumatic / Steam Hiss - low, long 03
+  60.9  Music FX/Drones / Dark Drone 03
+  65.2  Music FX/Drops / Sub Drop - high 03
+  67.4  Music FX/Metal / Gong - high 03
+  71.5  Nature/Animals / Bird Chirp - many, low 03
+  73.2  Nature/Water / Rain - long, bright 03
+  77.6  Nature/Wind / Wind Gust - low 03
+  81.9  Sci-Fi/Computers / Computer Beeps - high, many 03
+  83.3  Sci-Fi/Energy / Charge Up - high, quick 03
+  85.1  Sci-Fi/Lasers & Weapons / Laser Zap - shallow, long 03
+  86.0  Transitions/Glitch / Tape Stop - slow 03

@@ -1,0 +1,125 @@
+{
+ "name": "night-tram",
+ "duration": "108.02 s",
+ "loudness": {
+  "integratedLufs": -15.3,
+  "shortTermMaxLufs": -13.7,
+  "lra": 8.4,
+  "samplePeakDb": -1,
+  "truePeakDb": -0.6,
+  "rmsDb": -18.8,
+  "crestDb": 17.8
+ },
+ "spectrum": {
+  "centroidHz": 780,
+  "rolloff85Hz": 1044,
+  "tiltDbPerOct": -6.3,
+  "bands": [
+   "sub 20-60 Hz: 6.8%",
+   "bass 60-250 Hz: 17.2%",
+   "low-mid 250-500 Hz: 36.9%",
+   "mid 500-2000 Hz: 38.6%",
+   "high-mid 2000-4000 Hz: 5.4%",
+   "presence 4000-8000 Hz: 1.8%",
+   "air 8000-16000 Hz: 0.4%"
+  ]
+ },
+ "stereo": {
+  "correlation": 0.9,
+  "widthPercent": 23,
+  "balanceDb": -0.6
+ },
+ "issues": [],
+ "critic": {
+  "score": {
+   "harmony": 100,
+   "melody": 100,
+   "rhythm": 100,
+   "dynamics": 100,
+   "structure": 100,
+   "humanization": 100,
+   "orchestration": 100,
+   "overall": 100
+  },
+  "findings": [],
+  "strengths": [
+   "The piece resolves to the tonic.",
+   "The drum part varies from bar to bar and has fills.",
+   "Harmonic variety: 16 different chord functions."
+  ]
+ },
+ "mix": {
+  "findings": [
+   {
+    "severity": "info",
+    "message": "4 accompaniment tracks sit mostly in 250 Hz-2.5 kHz (E-piano, Vibes, Guitar, Room): crowded midrange.",
+    "hint": "Pan them apart, thin the voicings, EQ-carve each a different region."
+   }
+  ],
+  "tracks": [
+   {
+    "track": "E-piano",
+    "role": "chords",
+    "rmsDb": -34.4,
+    "peakDb": -16.1,
+    "low": "35%",
+    "mid": "62%",
+    "high": "3%"
+   },
+   {
+    "track": "Bass",
+    "role": "bass",
+    "rmsDb": -35.6,
+    "peakDb": -11.5,
+    "low": "13%",
+    "mid": "57%",
+    "high": "30%"
+   },
+   {
+    "track": "Vibes",
+    "role": "chords",
+    "rmsDb": -35.1,
+    "peakDb": -16.4,
+    "low": "18%",
+    "mid": "76%",
+    "high": "6%"
+   },
+   {
+    "track": "Guitar",
+    "role": "chords",
+    "rmsDb": -38.7,
+    "peakDb": -16.2,
+    "low": "12%",
+    "mid": "65%",
+    "high": "23%"
+   },
+   {
+    "track": "Pad",
+    "role": "pad",
+    "rmsDb": -39.4,
+    "peakDb": -24.9,
+    "low": "45%",
+    "mid": "53%",
+    "high": "2%"
+   },
+   {
+    "track": "Drums",
+    "role": "drums",
+    "rmsDb": -37.1,
+    "peakDb": -13.9,
+    "low": "87%",
+    "mid": "12%",
+    "high": "1%"
+   },
+   {
+    "track": "Room",
+    "role": "chords",
+    "rmsDb": -45.7,
+    "peakDb": -26.9,
+    "low": "26%",
+    "mid": "69%",
+    "high": "5%"
+   }
+  ]
+ }
+}
