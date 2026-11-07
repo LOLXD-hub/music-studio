@@ -14,3 +14,5 @@ tmp/
 examples/music/*.flac
 release/
 tmp/
+examples/music/*.assets/
+examples/music/sfx-reel.msai
