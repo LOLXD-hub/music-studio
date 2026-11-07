@@ -85,15 +85,7 @@ npm run docs      # regenerate docs/mcp-tools.md from the tool definitions
 npm run dist      # portable Windows build
 ```
 
-Unknown command: "start"
-
-
-Did you mean one of these?
-  npm star # Mark your favorite packages
-  npm stars # View packages marked as favorites
-  npm start # Start a package
-To see a list of supported npm commands, run:
-  npm help builds the app and opens its window. After the first build you can start it faster with . There is no installer yet:  is set up for a portable Windows build but has not been tested.
+`npm start` builds the app and opens its window. After the first build you can start it faster with `npx electron .`. There is no installer yet: `npm run dist` is set up for a portable Windows build but has not been tested.
 
 ### First run
 

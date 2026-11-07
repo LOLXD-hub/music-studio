@@ -85,15 +85,7 @@ npm run docs      # пересобрать docs/mcp-tools.md из определ
 npm run dist      # портативная сборка для Windows
 ```
 
-Unknown command: "start"
-
-
-Did you mean one of these?
-  npm star # Mark your favorite packages
-  npm stars # View packages marked as favorites
-  npm start # Start a package
-To see a list of supported npm commands, run:
-  npm help собирает приложение и открывает окно. После первой сборки быстрее запускать так: . Установщика пока нет:  настроен на портативную сборку для Windows, но не проверялся.
+`npm start` собирает приложение и открывает окно. После первой сборки быстрее запускать так: `npx electron .`. Установщика пока нет: `npm run dist` настроен на портативную сборку для Windows, но не проверялся.
 
 ### Первый запуск
 
