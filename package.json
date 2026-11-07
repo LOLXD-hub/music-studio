@@ -1,0 +1,38 @@
+{
+  "name": "music-studio-for-ai",
+  "productName": "Music studio for AI",
+  "version": "0.1.0",
+  "description": "A DAW with its own audio engine and an MCP bridge, so an AI agent can compose, mix, listen and export music.",
+  "type": "module",
+  "main": "dist/main/main.cjs",
+  "license": "MIT",
+  "author": "Music studio for AI contributors",
+  "engines": { "node": ">=22.18" },
+  "scripts": {
+    "build": "node tools/build.mjs",
+    "start": "npm run build && electron .",
+    "dev": "node tools/build.mjs --watch",
+    "mcp": "node src/mcp/stdio.ts",
+    "headless": "node src/mcp/headless.ts",
+    "test": "node tests/run.ts",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "sfx:render": "node tools/render-sfx-library.ts",
+    "media": "node tools/make-media.ts",
+    "dist": "npm run build && electron-builder --win portable"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.32.2",
+    "@wasm-audio-decoders/flac": "^0.2.11",
+    "lamejs": "^1.2.1",
+    "mpg123-decoder": "^1.0.3",
+    "preact": "^10.26.0",
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "electron": "^45.2.3",
+    "electron-builder": "^26.0.0",
+    "esbuild": "^0.28.2",
+    "typescript": "^5.9.0"
+  }
+}
