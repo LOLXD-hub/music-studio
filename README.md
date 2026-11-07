@@ -85,7 +85,24 @@ npm run docs      # regenerate docs/mcp-tools.md from the tool definitions
 npm run dist      # portable Windows build
 ```
 
-Settings has the name switch: the app is called "Music studio" by default and can be shown as "Claude music".
+Unknown command: "start"
+
+
+Did you mean one of these?
+  npm star # Mark your favorite packages
+  npm stars # View packages marked as favorites
+  npm start # Start a package
+To see a list of supported npm commands, run:
+  npm help builds the app and opens its window. After the first build you can start it faster with . There is no installer yet:  is set up for a portable Windows build but has not been tested.
+
+### First run
+
+1. The "Connect your AI" dialog opens. Pick your client (Claude Code, Claude Desktop, Codex, Antigravity) and press **Connect + skill**. Start a new session in that client afterwards.
+2. Ask the AI for a piece of music. Tracks and notes appear as it works, and Clawd at the top left shows what it is doing.
+3. Press Space to play. Pin a note on the timeline or type feedback in the Agent deck to steer it.
+4. Without an AI you can still use it: add tracks from the Browser on the left, draw notes in the piano roll, use Sound FX, export from File > Export audio.
+
+Settings (Options > Settings) has the name switch: the app is called "Music studio" by default and can be shown as "Claude music".
 
 ## How it is built
 

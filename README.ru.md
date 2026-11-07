@@ -85,7 +85,24 @@ npm run docs      # пересобрать docs/mcp-tools.md из определ
 npm run dist      # портативная сборка для Windows
 ```
 
-В настройках есть переключатель названия: по умолчанию приложение называется «Music studio», его можно показывать как «Claude music».
+Unknown command: "start"
+
+
+Did you mean one of these?
+  npm star # Mark your favorite packages
+  npm stars # View packages marked as favorites
+  npm start # Start a package
+To see a list of supported npm commands, run:
+  npm help собирает приложение и открывает окно. После первой сборки быстрее запускать так: . Установщика пока нет:  настроен на портативную сборку для Windows, но не проверялся.
+
+### Первый запуск
+
+1. Откроется окно «Connect your AI». Выберите клиент (Claude Code, Claude Desktop, Codex, Antigravity) и нажмите **Connect + skill**. После этого начните в клиенте новую сессию.
+2. Попросите ИИ написать музыку. Дорожки и ноты появляются по мере работы, а Clawd слева сверху показывает, чем он занят.
+3. Пробел запускает воспроизведение. Чтобы направить ИИ, поставьте метку на таймлайне или напишите отзыв в Agent deck.
+4. Без ИИ тоже можно работать: добавляйте дорожки из браузера слева, рисуйте ноты в piano roll, пользуйтесь Sound FX, экспортируйте через File > Export audio.
+
+Настройки (Options > Settings) содержат переключатель названия: по умолчанию приложение называется «Music studio», его можно показывать как «Claude music».
 
 ## Устройство
 
