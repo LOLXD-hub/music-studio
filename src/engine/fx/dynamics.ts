@@ -1,4 +1,4 @@
-import { Biquad } from '../dsp/filters.ts';
+﻿import { Biquad } from '../dsp/filters.ts';
 import { dbToGain } from '../dsp/core.ts';
 import type { ParamDesc } from '../dsp/core.ts';
 import { FxBase } from './base.ts';
@@ -41,11 +41,11 @@ class Compressor extends FxBase {
     this.scL.set('hp', this.p.sc_hp, 0.707, 0, sr);
     this.scR.set('hp', this.p.sc_hp, 0.707, 0, sr);
   }
-  override setSidechain(L: Float32Array | null, R: Float32Array | null): void {
+  setSidechain(L: Float32Array | null, R: Float32Array | null): void {
     this.scA = L;
     this.scB = R;
   }
-  override meter(): number {
+  meter(): number {
     return this.lastGr;
   }
   process(L: Float32Array, R: Float32Array, s: number, e: number): void {
@@ -151,7 +151,7 @@ class Limiter extends FxBase {
   protected override update(): void {
     this.relC = 1 - Math.exp(-1 / (this.p.release * 0.001 * this.sr));
   }
-  override meter(): number {
+  meter(): number {
     return this.lastGr;
   }
   override tail(): number {

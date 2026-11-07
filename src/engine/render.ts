@@ -1,5 +1,5 @@
 import { Engine } from './engine.ts';
-import type { AssetBuffer } from './engine.ts';
+import type { AssetBuffer, TrackStat } from './engine.ts';
 import type { Project } from './project.ts';
 
 export interface RenderOptions {
@@ -15,6 +15,8 @@ export interface RenderOptions {
   onProgress?: (fraction: number) => void;
   /** Collect per-track RMS this often (seconds). Used by the demo recorder and the activity meters. */
   meterEverySec?: number;
+  /** Collect loudness and a 3-band split per track (for mix critique). */
+  trackStats?: boolean;
 }
 
 export interface MeterFrame {
@@ -31,6 +33,7 @@ export interface RenderResult {
   /** Seconds of tail rendered after the end marker. */
   tailSec: number;
   trace?: MeterFrame[];
+  trackStats?: Record<string, TrackStat>;
   renderMs: number;
 }
 
@@ -48,6 +51,7 @@ export function renderProject(project: Project, assets: Map<string, AssetBuffer>
   const tailMax = opts.tailMaxSec ?? 8;
   const tailTarget = Math.min(tailMax, eng.fxTailSeconds() + 0.5);
   if (opts.soloTracks) eng.setSoloOnly(opts.soloTracks);
+  eng.collectStats = !!opts.trackStats;
   eng.seekSeconds(start);
   eng.play();
   const bodyFrames = Math.max(0, Math.round((end - start) * sr));
@@ -109,6 +113,7 @@ export function renderProject(project: Project, assets: Map<string, AssetBuffer>
     durationSec: keep / sr,
     tailSec: Math.max(0, keep - bodyFrames) / sr,
     trace: every > 0 ? trace : undefined,
+    trackStats: opts.trackStats ? eng.readTrackStats() : undefined,
     renderMs: Date.now() - t0,
   };
 }

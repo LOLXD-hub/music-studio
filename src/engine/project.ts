@@ -213,8 +213,8 @@ export function newProject(name = 'Untitled'): Project {
 
 /** Track palette, picked by index so a new track gets a distinct hue. */
 export const TRACK_COLORS = [
-  '#ff8a5b', '#5bc0ff', '#7ee0a0', '#e58cff', '#ffd166', '#6ee7e0', '#ff6b9a', '#9b8cff',
-  '#b8e05b', '#ffa94d', '#5b8cff', '#ff7b7b',
+  '#c28b5a', '#5f97be', '#6fae82', '#a77cb8', '#c4a755', '#58a8a2', '#bb6d86', '#837bbd',
+  '#97ad58', '#c5885a', '#6d86bf', '#c27474',
 ];
 
 let idCounter = 0;

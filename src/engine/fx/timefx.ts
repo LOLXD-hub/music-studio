@@ -1,4 +1,4 @@
-import { DelayLine } from '../dsp/delay.ts';
+﻿import { DelayLine } from '../dsp/delay.ts';
 import { Biquad, SVF } from '../dsp/filters.ts';
 import { Noise, TWO_PI, flush, fastTanh } from '../dsp/core.ts';
 import type { ParamDesc } from '../dsp/core.ts';
@@ -41,7 +41,7 @@ class StereoDelay extends FxBase {
     this.tL = this.targetL();
     this.tR = this.targetR();
   }
-  override setTempo(bpm: number): void {
+  setTempo(bpm: number): void {
     this.bpm = bpm;
   }
   private targetL(): number {

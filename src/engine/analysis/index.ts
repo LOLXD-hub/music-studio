@@ -439,7 +439,7 @@ const GLYPHS: Record<string, string> = {
   k: '101101110101101', '.': '000000000000010', s: '011100010001110', m: '000111111101101',
 };
 
-function drawText(img: ImageData8, x: number, y: number, text: string, color: [number, number, number], scale = 1): void {
+export function drawText(img: ImageData8, x: number, y: number, text: string, color: [number, number, number], scale = 1): void {
   for (const ch of text) {
     const g = GLYPHS[ch];
     if (g) {

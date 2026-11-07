@@ -78,6 +78,15 @@ interface TrackRt {
   rmsAcc: number;
   rmsN: number;
   scSource: string | null;
+  st: { lp1: number; lp2: number; low: number; mid: number; high: number; tot: number; active: number; pk: number };
+}
+
+export interface TrackStat {
+  rmsDb: number;
+  peakDb: number;
+  lowShare: number;
+  midShare: number;
+  highShare: number;
 }
 
 export interface MeterReading {
@@ -204,7 +213,27 @@ export class Engine {
       balance: new Smoother(spec.pan, 0.012, this.sampleRate),
       sendGain: [], lanes: [], muted: false, volDb: spec.vol, pan: spec.pan, autoMute: false, sendDb: [],
       peakL: 0, peakR: 0, rmsAcc: 0, rmsN: 0, scSource: null,
+      st: { lp1: 0, lp2: 0, low: 0, mid: 0, high: 0, tot: 0, active: 0, pk: 0 },
     };
+  }
+
+  /** Per-track loudness and 3-band split, accumulated while rendering with collectStats on. */
+  collectStats = false;
+
+  readTrackStats(): Record<string, TrackStat> {
+    const out: Record<string, TrackStat> = {};
+    for (const t of this.tracks.values()) {
+      const s = t.st;
+      const sum = s.low + s.mid + s.high + 1e-30;
+      out[t.id] = {
+        rmsDb: s.active ? 10 * Math.log10(s.tot / s.active + 1e-20) : -120,
+        peakDb: 20 * Math.log10(s.pk + 1e-9),
+        lowShare: s.low / sum,
+        midShare: s.mid / sum,
+        highShare: s.high / sum,
+      };
+    }
+    return out;
   }
 
   private syncTrack(spec: Track): void {
@@ -691,6 +720,22 @@ export class Engine {
       if (pkR > t.peakR) t.peakR = pkR;
       t.rmsAcc += rms;
       t.rmsN += (e - s) * 2;
+      if (this.collectStats && rms > 1e-9 * (e - s)) {
+        const st = t.st;
+        const c1 = 1 - Math.exp((-2 * Math.PI * 250) / sr);
+        const c2 = 1 - Math.exp((-2 * Math.PI * 2500) / sr);
+        let lo = 0, mi = 0, hi = 0, tot = 0;
+        for (let i = s; i < e; i++) {
+          const m = 0.5 * (L[i] + R[i]);
+          st.lp1 += c1 * (m - st.lp1);
+          st.lp2 += c2 * (m - st.lp2);
+          const a1 = st.lp1, a2 = st.lp2 - st.lp1, a3 = m - st.lp2;
+          lo += a1 * a1; mi += a2 * a2; hi += a3 * a3; tot += m * m;
+        }
+        st.low += lo; st.mid += mi; st.high += hi; st.tot += tot; st.active += e - s;
+        const mx = Math.max(pk, pkR);
+        if (mx > st.pk) st.pk = mx;
+      }
       // routing
       for (let k = 0; k < t.spec.sends.length; k++) {
         const bus = byId.get(t.spec.sends[k].to);

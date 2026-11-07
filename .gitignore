@@ -9,3 +9,8 @@ Thumbs.db
 # local render output; the curated demos live in examples/ and docs/media/
 tmp/
 .studio-data/
+
+# FLAC renders are large; examples/_lib.mjs still writes them locally
+examples/music/*.flac
+release/
+tmp/
