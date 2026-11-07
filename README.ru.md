@@ -73,6 +73,8 @@
 Нужен Node 22.18 или новее (лучше 24) и, по желанию, FFmpeg в `PATH` для OGG, M4A и Opus.
 
 ```bash
+git clone https://github.com/LOLXD-hub/music-studio.git
+cd music-studio
 npm install
 npm start
 ```

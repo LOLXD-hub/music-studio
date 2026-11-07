@@ -73,6 +73,8 @@ The skill is in [`skills/music-studio`](skills/music-studio/SKILL.md). The serve
 Needs Node 22.18 or newer (Node 24 recommended) and, optionally, FFmpeg on `PATH` for OGG, M4A and Opus.
 
 ```bash
+git clone https://github.com/LOLXD-hub/music-studio.git
+cd music-studio
 npm install
 npm start
 ```

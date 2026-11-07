@@ -66,5 +66,10 @@
     "extraMetadata": {
       "main": "dist/main/main.cjs"
     }
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LOLXD-hub/music-studio.git"
+  },
+  "homepage": "https://github.com/LOLXD-hub/music-studio"
 }
